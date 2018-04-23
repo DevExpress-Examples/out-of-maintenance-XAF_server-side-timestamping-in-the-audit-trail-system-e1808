@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application Title="AuditDemo" Subtitle="Powered by eXpressApp Framework" Company="Developer Express Inc" Logo="ExpressAppLogo">
+	<Views>
+		<ListView ID="Artist_AuditTrail_ListView">
+			<Columns>
+				<ColumnInfo PropertyName="OldValue" Index="4" />
+				<ColumnInfo PropertyName="NewValue" Index="5" />
+			</Columns>
+		</ListView>
+		<ListView ID="Album_AuditTrail_ListView">
+			<Columns>
+				<ColumnInfo PropertyName="OldValue" Index="4" />
+				<ColumnInfo PropertyName="NewValue" Index="5" />
+			</Columns>
+		</ListView>
+	</Views>
+	<SchemaModules IsNewNode="True">
+		<SchemaModule Name="CommonSystemModule" Version="7.1.4.3486" IsNewNode="True" />
+		<SchemaModule Name="DevExpress.ExpressApp.SystemModule.ShowNavigationItemController" Version="7.1.4.3486" IsNewNode="True" />
+		<SchemaModule Name="DevExpress.ExpressApp.SystemModule.HideActionsViewController" Version="7.1.4.3486" IsNewNode="True" />
+	</SchemaModules>
+</Application>
