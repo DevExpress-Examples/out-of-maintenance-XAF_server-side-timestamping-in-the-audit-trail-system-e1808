@@ -1,3 +1,11 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [BusinessObjects.cs](./CS/AuditDemo.Module/BusinessObjects.cs) (VB: [BusinessObjects.vb](./VB/AuditDemo.Module/BusinessObjects.vb))
+* [MSSqlServerTimestampStrategy.cs](./CS/AuditDemo.Module/MSSqlServerTimestampStrategy.cs) (VB: [MSSqlServerTimestampStrategy.vb](./VB/AuditDemo.Module/MSSqlServerTimestampStrategy.vb))
+* [WebServiceTimestampStrategy.cs](./CS/AuditDemo.Module/WebServiceTimestampStrategy.cs) (VB: [WebServiceTimestampStrategy.vb](./VB/AuditDemo.Module/WebServiceTimestampStrategy.vb))
+* [TimestampService.asmx](./CS/TimestampWebService/TimestampService.asmx) (VB: [TimestampService.asmx](./VB/TimestampWebService/TimestampService.asmx))
+<!-- default file list end -->
 # Server-Side Timestamping in the Audit Trail System
 
 
