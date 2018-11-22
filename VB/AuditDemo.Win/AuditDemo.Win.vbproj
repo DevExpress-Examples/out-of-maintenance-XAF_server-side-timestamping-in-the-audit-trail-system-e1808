@@ -9,6 +9,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace></RootNamespace>
     <AssemblyName>AuditDemo.Win</AssemblyName>
+	    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <ApplicationIcon>ExpressApp.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -30,121 +31,137 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.ExpressApp.AuditTrail.v12.2">
+    <Reference Include="DevExpress.ExpressApp.AuditTrail.v18.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.AuditTrail.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.Utils.v12.2">
+    <Reference Include="DevExpress.Utils.v18.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.Utils.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.BonusSkins.v12.2">
+    <Reference Include="DevExpress.BonusSkins.v18.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.BonusSkins.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.Printing.v12.2.Core">
+    <Reference Include="DevExpress.Pdf.v18.2.Core">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.Printing.v12.2.Core.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.Data.v12.2">
+    <Reference Include="DevExpress.RichEdit.v18.2.Export">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.Data.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Xpo.v12.2">
+    <Reference Include="DevExpress.Printing.v18.2.Core">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.Xpo.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.v12.2">
+    <Reference Include="DevExpress.Data.v18.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Images.v12.2">
+    <Reference Include="DevExpress.ExpressApp.Security.Xpo.v18.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.Images.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Objects.v12.2">
+    <Reference Include="DevExpress.ExpressApp.Xpo.v18.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.Objects.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Security.v12.2">
+    <Reference Include="DevExpress.ExpressApp.v18.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.Security.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Validation.v12.2">
+    <Reference Include="DevExpress.ExpressApp.Images.v18.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.Validation.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Validation.Win.v12.2">
+    <Reference Include="DevExpress.ExpressApp.Objects.v18.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.Validation.Win.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Win.v12.2">
+    <Reference Include="DevExpress.ExpressApp.Security.v18.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.Win.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.Persistent.Base.v12.2">
+    <Reference Include="DevExpress.ExpressApp.Validation.v18.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.Persistent.Base.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.Persistent.BaseImpl.v12.2">
+    <Reference Include="DevExpress.ExpressApp.Validation.Win.v18.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.Persistent.BaseImpl.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.Xpo.v12.2">
+    <Reference Include="DevExpress.ExpressApp.Win.v18.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.Xpo.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.XtraBars.v12.2">
+    <Reference Include="DevExpress.Persistent.Base.v18.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.XtraBars.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.Charts.v12.2.Core">
+    <Reference Include="DevExpress.Persistent.BaseImpl.v18.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.Charts.v12.2.Core.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.XtraCharts.v12.2.Wizard">
+    <Reference Include="DevExpress.Xpo.v18.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.XtraCharts.v12.2.Wizard.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.XtraCharts.v12.2">
+    <Reference Include="DevExpress.XtraBars.v18.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.XtraCharts.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.XtraEditors.v12.2">
+    <Reference Include="DevExpress.Charts.v18.2.Core">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.XtraEditors.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.XtraGrid.v12.2">
+    <Reference Include="DevExpress.XtraCharts.v18.2.Wizard">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.XtraGrid.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.XtraLayout.v12.2">
+    <Reference Include="DevExpress.XtraCharts.v18.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.XtraLayout.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.XtraNavBar.v12.2">
+    <Reference Include="DevExpress.XtraEditors.v18.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.XtraNavBar.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.XtraPrinting.v12.2">
+    <Reference Include="DevExpress.XtraGrid.v18.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.XtraPrinting.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.Office.v12.2.Core">
+    <Reference Include="DevExpress.XtraLayout.v18.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.Office.v12.2.Core.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.RichEdit.v12.2.Core">
+    <Reference Include="DevExpress.XtraNavBar.v18.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.RichEdit.v12.2.Core.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.XtraRichEdit.v12.2">
+    <Reference Include="DevExpress.XtraPrinting.v18.2">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.XtraRichEdit.v12.2.dll</HintPath>
+      
     </Reference>
-    <Reference Include="DevExpress.XtraVerticalGrid.v12.2">
+    <Reference Include="DevExpress.Office.v18.2.Core">
       <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\12.2.2\DevExpress.XtraVerticalGrid.v12.2.dll</HintPath>
+      
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v18.2.Core">
+      <Private>True</Private>
+      
+    </Reference>
+    <Reference Include="DevExpress.Images.v18.2">
+      <Private>True</Private>
+      
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v18.2">
+      <Private>True</Private>
+      
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v18.2">
+      <Private>True</Private>
+      
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
