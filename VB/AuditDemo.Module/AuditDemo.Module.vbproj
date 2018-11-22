@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -32,55 +32,42 @@
   <ItemGroup>
     <Reference Include="DevExpress.Pdf.v18.2.Core">
       <Private>True</Private>
-      
     </Reference>
     <Reference Include="DevExpress.Office.v18.2.Core">
       <Private>True</Private>
-      
     </Reference>
     <Reference Include="DevExpress.RichEdit.v18.2.Core">
       <Private>True</Private>
-      
     </Reference>
     <Reference Include="DevExpress.RichEdit.v18.2.Export">
       <Private>True</Private>
-      
     </Reference>
     <Reference Include="DevExpress.Printing.v18.2.Core">
       <Private>True</Private>
-      
     </Reference>
     <Reference Include="DevExpress.Data.v18.2">
       <Private>True</Private>
-      
     </Reference>
     <Reference Include="DevExpress.ExpressApp.Objects.v18.2">
       <Private>True</Private>
-      
     </Reference>
     <Reference Include="DevExpress.ExpressApp.Xpo.v18.2">
       <Private>True</Private>
-      
     </Reference>
     <Reference Include="DevExpress.ExpressApp.v18.2">
       <Private>True</Private>
-      
     </Reference>
     <Reference Include="DevExpress.ExpressApp.Validation.v18.2">
       <Private>True</Private>
-      
     </Reference>
     <Reference Include="DevExpress.Persistent.Base.v18.2">
       <Private>True</Private>
-      
     </Reference>
     <Reference Include="DevExpress.Persistent.BaseImpl.v18.2">
       <Private>True</Private>
-      
     </Reference>
     <Reference Include="DevExpress.Xpo.v18.2">
       <Private>True</Private>
-      
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
