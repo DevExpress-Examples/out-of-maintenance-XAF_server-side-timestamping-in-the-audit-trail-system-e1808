@@ -36,7 +36,7 @@ Namespace AuditDemo.Module.TimestampWebService
 
 		''' <remarks/>
 		Public Sub New()
-			Me.Url = My.Settings.Default.AuditDemo_Module_TimestampWebService_TimestampService
+			Me.Url = My.Settings.AuditDemo_Module_TimestampWebService_TimestampService
 			If (Me.IsLocalFileSystemWebService(Me.Url) = True) Then
 				Me.UseDefaultCredentials = True
 				Me.useDefaultCredentialsSetExplicitly = False
