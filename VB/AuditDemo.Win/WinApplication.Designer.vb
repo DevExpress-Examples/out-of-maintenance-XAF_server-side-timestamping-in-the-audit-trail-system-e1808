@@ -1,6 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
-Namespace AuditDemo.Win
+﻿Namespace AuditDemo.Win
 	Partial Public Class AuditDemoWindowsFormsApplication
 		''' <summary> 
 		''' Required designer variable.
@@ -31,7 +29,7 @@ Namespace AuditDemo.Win
 			Me.sqlConnection1 = New System.Data.SqlClient.SqlConnection()
 			Me.auditTrailModule1 = New DevExpress.ExpressApp.AuditTrail.AuditTrailModule()
 			Me.module3 = New AuditDemo.Module.AuditDemoModule()
-			CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
+			DirectCast(Me, System.ComponentModel.ISupportInitialize).BeginInit()
 			' 
 			' sqlConnection1
 			' 
@@ -47,8 +45,9 @@ Namespace AuditDemo.Win
 			Me.Modules.Add(Me.module3)
 			Me.Modules.Add(Me.module6)
 			Me.Modules.Add(Me.auditTrailModule1)
-'			Me.DatabaseVersionMismatch += New System.EventHandler(Of DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs)(Me.AuditDemoWindowsFormsApplication_DatabaseVersionMismatch);
-			CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.DatabaseVersionMismatch += new System.EventHandler<DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs>(this.AuditDemoWindowsFormsApplication_DatabaseVersionMismatch);
+			DirectCast(Me, System.ComponentModel.ISupportInitialize).EndInit()
 
 		End Sub
 

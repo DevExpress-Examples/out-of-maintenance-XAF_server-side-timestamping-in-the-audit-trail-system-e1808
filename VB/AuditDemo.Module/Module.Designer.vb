@@ -1,6 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
-Namespace AuditDemo.Module
+﻿Namespace AuditDemo.Module
 	Partial Public Class AuditDemoModule
 		''' <summary> 
 		''' Required designer variable.

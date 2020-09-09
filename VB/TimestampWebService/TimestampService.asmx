@@ -1,1 +1,1 @@
-<%@ WebService Language="vb" CodeBehind="TimestampService.asmx.vb" Class="TimestampWebService.TimestampService" %>
+<%@ WebService Language="C#" CodeBehind="TimestampService.asmx.cs" Class="TimestampWebService.TimestampService" %>

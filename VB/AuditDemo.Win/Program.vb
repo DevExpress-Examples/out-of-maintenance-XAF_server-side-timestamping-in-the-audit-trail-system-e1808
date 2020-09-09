@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Configuration
 Imports System.Windows.Forms
 
@@ -13,7 +12,7 @@ Imports System.Security.Principal
 Imports AuditDemo.Module
 
 Namespace AuditDemo.Win
-	Friend NotInheritable Class Program
+	Friend Module Program
 		'private static void WinApplication_DatabaseVersionMismatch(object sender, DatabaseVersionMismatchEventArgs args) {
 		'    args.Updater.Update();
 		'    args.Handled = true;
@@ -21,17 +20,15 @@ Namespace AuditDemo.Win
 		'/// <summary>
 		'/// The main entry point for the application.
 		'/// </summary>
-		Private Sub New()
-		End Sub
-		<STAThread> _
-		Shared Sub Main()
+		<STAThread>
+		Sub Main()
 
-            application.EnableVisualStyles()
-            application.SetCompatibleTextRenderingDefault(False)
+			Application.EnableVisualStyles()
+			Application.SetCompatibleTextRenderingDefault(False)
 			EditModelPermission.AlwaysGranted = System.Diagnostics.Debugger.IsAttached
-            Dim winApplication As New AuditDemoWindowsFormsApplication()
+			Dim application As New AuditDemoWindowsFormsApplication()
 			If ConfigurationManager.ConnectionStrings("ConnectionString") IsNot Nothing Then
-                winApplication.ConnectionString = ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString
+				application.ConnectionString = ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString
 			End If
 			Try
 				'default time stamping strategy 
@@ -49,16 +46,16 @@ Namespace AuditDemo.Win
 
 				AuditTrailService.Instance.TimestampStrategy = timestampStrategy
 				AddHandler AuditTrailService.Instance.QueryCurrentUserName, AddressOf Instance_QueryCurrentUserName
-                DevExpress.ExpressApp.Xpo.InMemoryDataStoreProvider.Register()
-                                winApplication.ConnectionString = DevExpress.ExpressApp.Xpo.InMemoryDataStoreProvider.ConnectionString
-                winApplication.Setup()
-                winApplication.Start()
+	DevExpress.ExpressApp.Xpo.InMemoryDataStoreProvider.Register()
+					application.ConnectionString = DevExpress.ExpressApp.Xpo.InMemoryDataStoreProvider.ConnectionString
+				application.Setup()
+				application.Start()
 			Catch e As Exception
-                winApplication.HandleException(e)
+				application.HandleException(e)
 			End Try
 		End Sub
-		Private Shared Sub Instance_QueryCurrentUserName(ByVal sender As Object, ByVal e As QueryCurrentUserNameEventArgs)
+		Private Sub Instance_QueryCurrentUserName(ByVal sender As Object, ByVal e As QueryCurrentUserNameEventArgs)
 			e.CurrentUserName = WindowsIdentity.GetCurrent().Name
 		End Sub
-	End Class
+	End Module
 End Namespace

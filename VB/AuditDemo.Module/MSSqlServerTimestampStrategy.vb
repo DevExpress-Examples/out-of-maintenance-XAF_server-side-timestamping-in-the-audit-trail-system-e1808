@@ -1,21 +1,19 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports DevExpress.Xpo
 Imports DevExpress.Persistent.AuditTrail
 
 Namespace AuditDemo.Module
-  Public Class MSSqlServerTimestampStrategy
-        Implements IAuditTimestampStrategy
-        Private cachedTimeStamp As Date
-        #Region "IAuditTimeStampStrategy Members"
-        Public Function GetTimestamp(ByVal auditDataItem As AuditDataItem) As DateTime _
-        Implements IAuditTimestampStrategy.GetTimestamp
-             Return cachedTimestamp
-        End Function
-        Public Sub OnBeginSaveTransaction(ByVal session As Session) _
-        Implements IAuditTimestampStrategy.OnBeginSaveTransaction
-            cachedTimeStamp = CDate(session.ExecuteScalar("select getdate()"))
-        End Sub
-        #End Region
-    End Class
+	Public Class MSSqlServerTimestampStrategy
+		Implements IAuditTimestampStrategy
+
+		Private cachedTimeStamp As DateTime
+		#Region "IAuditTimeStampStrategy Members"
+		Public Function GetTimestamp(ByVal auditDataItem As AuditDataItem) As DateTime
+			Return cachedTimeStamp
+		End Function
+		Public Sub OnBeginSaveTransaction(ByVal session As Session)
+			cachedTimeStamp = DirectCast(session.ExecuteScalar("select getdate()"), DateTime)
+		End Sub
+		#End Region
+	End Class
 End Namespace
